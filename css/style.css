@@ -1,0 +1,75 @@
+body {
+  background-color: #dfe4ea; }
+
+.title h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #57606f; }
+
+.variables-wrap, .nesting, .mixin, .partials, .extends, .operators,
+.interpolation, .function {
+  margin-top: 30px; }
+  .variables-wrap h2, .nesting h2, .mixin h2, .partials h2, .extends h2, .operators h2,
+  .interpolation h2, .function h2 {
+    color: #a4b0be; }
+  .variables-wrap h4, .nesting h4, .mixin h4, .partials h4, .extends h4, .operators h4,
+  .interpolation h4, .function h4 {
+    color: #95afc0; }
+  .variables-wrap p, .nesting p, .mixin p, .partials p, .extends p, .operators p,
+  .interpolation p, .function p {
+    color: #2C3A47;
+    font-size: 14px; }
+
+.box1, .box2, .box3, .part-yellow, .part-pink, .part-blue {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  margin: 20px; }
+
+.box1 {
+  border-radius: 10px; }
+
+.box2 {
+  border-radius: 30px; }
+
+.box3 {
+  border-radius: 50px; }
+
+.extend-yellow, .extend-pink, .extend-blue, .inter {
+  height: 150px;
+  width: 150px;
+  margin: 20px; }
+
+.extend-yellow {
+  background-color: #130f40; }
+
+.extend-pink {
+  background-color: #30336b; }
+
+.extend-blue {
+  background-color: #22a6b3; }
+
+.op-width {
+  background-color: crimson;
+  width: 502px;
+  height: 200px;
+  color: honeydew; }
+
+.inter {
+  background-color: #badc58;
+  padding-left: 50px;
+  width: 300px; }
+
+.func {
+  height: 200px;
+  width: 500px;
+  background-color: salmon; }
+
+.part-yellow {
+  background-color: #f6e58d; }
+
+.part-pink {
+  background-color: #ff7979; }
+
+.part-blue {
+  background-color: #7ed6df; }

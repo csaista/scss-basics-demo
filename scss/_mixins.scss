@@ -1,0 +1,19 @@
+@mixin  para-size() {
+    font-size: 14px ;
+    
+}
+@mixin box()
+{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    margin: 20px;
+}
+@mixin bd-radius($value)
+{
+    border-radius: $value;
+}
+@mixin padding($position, $unit) {
+    padding-#{$position} : $unit + px;
+    
+}

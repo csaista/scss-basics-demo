@@ -1,0 +1,99 @@
+@import "variables";
+@import "topics";
+@import "mixins";
+@function half($width)
+{
+    @return $width/2 +px;
+}
+body 
+{
+    background-color: $bg-color;
+}
+.title 
+{
+    h1 
+    {
+        text-align: center;
+        margin-top: 30px;
+        color: $heading-colour;
+    }
+
+}
+.variables-wrap, .nesting, .mixin, .partials, .extends, .operators,
+.interpolation, .function 
+{
+    margin-top: 30px;
+
+    h2 {
+        color: $sub-heading-color;
+    }
+    h4
+    {
+        color: $sub-topic-color;;
+    }
+    p {
+        color: $para-color;
+        @include para-size();
+    }
+}
+.box1, .box2, .box3, .part-yellow, .part-pink, .part-blue
+{
+    @include box();
+}
+.box1
+{
+    @include bd-radius(10px);
+}
+.box2
+{
+    @include bd-radius(30px);
+}
+.box3
+{
+    @include bd-radius(50px);
+}
+%extends
+{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+}
+.extend-yellow
+{
+    background-color: #130f40;
+   @extend %extends;
+}
+.extend-pink
+{
+    background-color: #30336b;
+    @extend %extends;
+}
+.extend-blue
+{
+    background-color: #22a6b3;
+    @extend %extends;
+}
+.op-width
+{
+    
+    background-color: crimson;
+    width: 5* $var1 + $var2 + px;
+    height:$var1 * $var2 + px;
+    color: honeydew
+}
+.inter 
+{
+    @extend %extends;
+    background-color: #badc58;
+    @include padding(left,50);
+    width: 300px;
+}
+.func 
+{
+    height: 200px;
+    width: half($container-width);
+    background-color: salmon;
+}
+@import "part-yellow";
+@import "part-pink";
+@import "part-blue";

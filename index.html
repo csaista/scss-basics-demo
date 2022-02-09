@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SASS Basics</title>
+</head>
+
+<body>
+    <div class="container title">
+        <h1>SASS Basics</h1>
+
+        <div class="variables-wrap">
+            <h2>Variables</h2>
+            <p>Here I have used background-colour as a variable</p>
+            <samp>$bg-color: #dfe4ea; <br>
+                $heading-colour: #57606f;<br>
+                $para-color: #2C3A47;<br>
+                $sub-heading-color:#a4b0be ;</samp>
+
+        </div>
+        <div class="nesting">
+            <h2>Nesting</h2>
+            <p>Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML.
+            </p>
+            <samp>
+                <pre>.nesting
+                {
+                    margin-top: 30px;
+                
+                    h2 {
+                        color: $sub-heading-color;
+                    }
+                
+                    p {
+                        color: $para-color;
+                    }
+                }</samp></pre>
+
+        </div>
+        <div class="mixin">
+            <h2>Mixin</h2>
+            <p>@mixin and @include</p>
+            <p>without and with parameters</p>
+            <p>Here I have used mixin as height,width and background-colour
+                for boxes WITHOUT parameters.
+                <br> and apply border-radius with border-radius on each using mixin WITH parameter
+            </p>
+
+            <div class="mixin-ex d-flex flex-wrap">
+                <div class="box1 text-center">10px </div>
+                <div class="box2 text-center">30px </div>
+                <div class="box3 text-center">50px </div>
+            </div>
+        </div>
+
+        <div class="partials">
+            <h2>Partials</h2>
+            <p>partials and @import</p>
+            <p>Here I have created different files for variables and mixins and
+                import those file in main scss file.
+            </p>
+            <p>also created different files for these three different boxes and import in main scss file </p>
+
+            <div class="parts d-flex flex-wrap">
+                <div class="part-yellow"></div>
+                <div class="part-pink"></div>
+                <div class="part-blue"></div>
+            </div>
+        </div>
+
+        <div class="extends">
+            <h2>Extends and placeholder</h2>
+            <p>Extends/Inheritance</p>
+            <p>It works like mixin but not contain any parameters.
+                <p>we can create piece of code and reuse it in any element</p>
+            </p>
+            <p>also created different files for these three different boxes and import in main scss file </p>
+
+            <div class="parts d-flex flex-wrap">
+                <div class="extend-yellow"></div>
+                <div class="extend-pink"></div>
+                <div class="extend-blue"></div>
+            </div>
+        </div>
+
+        <div class="operators">
+            <h2>Operators</h2>
+            <h4>String and Numeric Operator</h4>
+            <p>Calculation using operators like : + - / %
+            </p>
+            <div class="parts d-flex flex-wrap">
+                <div class="op-width text-center">Width using calculation</div>
+            </div>
+        </div>
+
+        <div class="interpolation">
+            <h2>Interpolation</h2>
+            <h4>Concatation of properties</h4>
+            
+            <div class="parts d-flex flex-wrap">
+                <div class="inter text-center">Padding-left : 50px Using Interpolation</div>
+            </div>
+        </div>
+        <div class="function">
+            <h2>Function</h2>
+            <h4>Same as mixin but it return value.</h4>
+            <p>We can reuse its return value</p>
+            
+            <div class="parts d-flex flex-wrap">
+                <div class="func text-center">actual width : 1000px
+                    <br>half width using function : 500px
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</body>
+
+</html>
